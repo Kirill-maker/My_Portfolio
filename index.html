@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukin Kirill - Digital Product Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Загрузка темы ДО отрисовки страницы (предотвращает мигание) -->
+    <script>
+        // Применяем сохраненную тему сразу
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            document.documentElement.classList.add('light-theme');
+        }
+    </script>
+</head>
+<body>
+    <div class="cursor-arrow"></div>
+
+    <!-- Particles -->
+    <div class="particles">
+        <div class="particle" style="left: 10%; top: 80%; animation-delay: 0s; animation-duration: 15s;"></div>
+        <div class="particle" style="left: 20%; top: 20%; animation-delay: 2s; animation-duration: 18s;"></div>
+        <div class="particle" style="left: 50%; top: 60%; animation-delay: 4s; animation-duration: 22s;"></div>
+        <div class="particle" style="left: 80%; top: 30%; animation-delay: 1s; animation-duration: 16s;"></div>
+        <div class="particle" style="left: 70%; top: 70%; animation-delay: 3s; animation-duration: 20s;"></div>
+        <div class="particle" style="left: 30%; top: 40%; animation-delay: 5s; animation-duration: 19s;"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-left">
+            <div class="location">NEW YORK, US</div>
+            <div class="time" id="time">09:38 PM</div>
+        </div>
+        <div class="header-right">
+            <div class="label" data-en="LAST UPDATED" data-ru="ОБНОВЛЕНО">LAST UPDATED</div>
+            <div class="date">NOV 2025</div>
+        </div>
+    </header>
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Сменить тему">
+            <span class="theme-icon">🌙</span>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Change language" title="Сменить язык">
+            <span class="lang-text">RU</span>
+        </button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-name-inline">
+                <h1 class="name-part-inline">
+                    <span class="letter" style="animation-delay: 0s">L</span>
+                    <span class="letter" style="animation-delay: 0.1s">U</span>
+                    <span class="letter" style="animation-delay: 0.2s">K</span>
+                    <span class="letter" style="animation-delay: 0.3s">I</span>
+                    <span class="letter" style="animation-delay: 0.4s">N</span>
+                </h1>
+
+                <div class="pixel-character-inline">
+                    <canvas id="pixelCanvas" width="96" height="144"></canvas>
+                </div>
+
+                <h1 class="name-part-inline">
+                    <span class="letter" style="animation-delay: 0.5s">K</span>
+                    <span class="letter" style="animation-delay: 0.6s">I</span>
+                    <span class="letter" style="animation-delay: 0.7s">R</span>
+                    <span class="letter" style="animation-delay: 0.8s">I</span>
+                    <span class="letter" style="animation-delay: 0.9s">L</span>
+                    <span class="letter" style="animation-delay: 1s">L</span>
+                </h1>
+            </div>
+
+            <div class="hero-subtitle">
+                <p class="subtitle-line" data-en="DIGITAL PRODUCT DESIGNER" data-ru="ЦИФРОВОЙ ПРОДУКТ ДИЗАЙНЕР">DIGITAL PRODUCT DESIGNER</p>
+                <p class="subtitle-line" data-en="BASED IN NEW YORK CITY" data-ru="БАЗИРУЕТСЯ В НЬЮ-ЙОРКЕ">BASED IN NEW YORK CITY</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <p class="about-text" 
+               data-en="I design interactive experiences that break away from sterile patterns, reintroducing delight and genuine engagement into everyday technology."
+               data-ru="Я создаю интерактивные решения, которые отходят от стандартных шаблонов, возвращая радость и искреннее вовлечение в повседневные технологии.">
+                I design interactive experiences<br>
+                that break away from sterile patterns,<br>
+                reintroducing delight and genuine<br>
+                engagement into everyday technology.
+            </p>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title-alt" data-en="What I Do" data-ru="Чем Я Занимаюсь">What I Do</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-icon">💻</div>
+                    <h3 data-en="Web Development" data-ru="Веб-Разработка">Web Development</h3>
+                    <p data-en="Creating modern, responsive websites with cutting-edge technologies." 
+                       data-ru="Создание современных адаптивных сайтов с передовыми технологиями.">
+                        Creating modern, responsive websites with cutting-edge technologies.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="card-icon">🎨</div>
+                    <h3 data-en="UI/UX Design" data-ru="UI/UX Дизайн">UI/UX Design</h3>
+                    <p data-en="Designing beautiful and intuitive user interfaces." 
+                       data-ru="Проектирование красивых и интуитивных пользовательских интерфейсов.">
+                        Designing beautiful and intuitive user interfaces.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="card-icon">⚡</div>
+                    <h3 data-en="Performance" data-ru="Производительность">Performance</h3>
+                    <p data-en="Optimizing applications for speed and efficiency." 
+                       data-ru="Оптимизация приложений для скорости и эффективности.">
+                        Optimizing applications for speed and efficiency.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="card-icon">🚀</div>
+                    <h3 data-en="Innovation" data-ru="Инновации">Innovation</h3>
+                    <p data-en="Exploring new technologies to solve problems." 
+                       data-ru="Изучение новых технологий для решения проблем.">
+                        Exploring new technologies to solve problems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label" data-en="Projects Completed" data-ru="Завершенных Проектов">Projects Completed</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p class="stat-label" data-en="Happy Clients" data-ru="Довольных Клиентов">Happy Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p class="stat-label" data-en="Years Experience" data-ru="Лет Опыта">Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p class="stat-label" data-en="Awards Won" data-ru="Полученных Наград">Awards Won</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <h2 class="section-title">
+                <div class="title-line" data-en="selected" data-ru="избранные">selected</div>
+                <div class="title-line" data-en="WORK" data-ru="РАБОТЫ">WORK</div>
+            </h2>
+            <div class="work-grid">
+                <div class="work-item" data-category="UX / UI">
+                    <div class="work-icon">📱</div>
+                    <h3 class="work-title">Luuna</h3>
+                    <p class="work-date">MAY 2022</p>
+                </div>
+                <div class="work-item" data-category="WEB">
+                    <div class="work-icon">🌐</div>
+                    <h3 class="work-title">Twinby</h3>
+                    <p class="work-date">NOV 2021</p>
+                </div>
+                <div class="work-item" data-category="MOTION">
+                    <div class="work-icon">▶️</div>
+                    <h3 class="work-title">ADC Space</h3>
+                    <p class="work-date">NOV 2021</p>
+                </div>
+            </div>
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="UX / UI">UX / UI</button>
+                <button class="filter-btn" data-filter="WEB">WEB</button>
+                <button class="filter-btn" data-filter="MOTION">MOTION</button>
+                <button class="filter-btn" data-filter="VISUAL">VISUAL</button>
+                <button class="filter-btn" data-filter="EXPERIMENTS">EXPERIMENTS</button>
+            </div>
+        </section>
+
+        <section class="technologies">
+            <h2 class="section-title-alt" data-en="Technologies I Use" data-ru="Технологии Которые Я Использую">Technologies I Use</h2>
+            <div class="tech-grid">
+                <div class="tech-item"><div class="tech-logo">React</div></div>
+                <div class="tech-item"><div class="tech-logo">Vue.js</div></div>
+                <div class="tech-item"><div class="tech-logo">Node.js</div></div>
+                <div class="tech-item"><div class="tech-logo">TypeScript</div></div>
+                <div class="tech-item"><div class="tech-logo">Python</div></div>
+                <div class="tech-item"><div class="tech-logo">Docker</div></div>
+                <div class="tech-item"><div class="tech-logo">MongoDB</div></div>
+                <div class="tech-item"><div class="tech-logo">PostgreSQL</div></div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="skills-header">
+                <h2 class="skills-years">5</h2>
+                <h2 class="skills-text" data-en="years in design" data-ru="лет в дизайне">
+                    <span data-en="years" data-ru="лет">years</span><br>
+                    <span data-en="in design" data-ru="в дизайне">in design</span>
+                </h2>
+            </div>
+            <div class="skills-marquee">
+                <div class="skills-track">
+                    <span class="skill-item">UX / UI</span>
+                    <span class="skill-item">MOBILE DESIGN</span>
+                    <span class="skill-item">WEB DESIGN</span>
+                    <span class="skill-item">VISUAL DESIGN</span>
+                    <span class="skill-item">MOTION DESIGN</span>
+                    <span class="skill-item">ART DIRECTION</span>
+                    <span class="skill-item">PRODUCT MINDSET</span>
+                    <span class="skill-item">DESIGN SYSTEMS</span>
+                    <span class="skill-item">USER RESEARCH</span>
+                    <span class="skill-item">ACCESSIBILITY</span>
+                    <span class="skill-item">PROTOTYPING</span>
+                    <span class="skill-item">NO-CODE</span>
+                </div>
+                <div class="skills-track">
+                    <span class="skill-item">UX / UI</span>
+                    <span class="skill-item">MOBILE DESIGN</span>
+                    <span class="skill-item">WEB DESIGN</span>
+                    <span class="skill-item">VISUAL DESIGN</span>
+                    <span class="skill-item">MOTION DESIGN</span>
+                    <span class="skill-item">ART DIRECTION</span>
+                    <span class="skill-item">PRODUCT MINDSET</span>
+                    <span class="skill-item">DESIGN SYSTEMS</span>
+                    <span class="skill-item">USER RESEARCH</span>
+                    <span class="skill-item">ACCESSIBILITY</span>
+                    <span class="skill-item">PROTOTYPING</span>
+                    <span class="skill-item">NO-CODE</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-item">
+                <p class="footer-label">Email</p>
+                <a href="mailto:hello@lukinkirill.com" class="footer-link">HELLO@LUKINKIRILL.COM</a>
+            </div>
+            <div class="footer-item">
+                <p class="footer-label">LINKEDIN</p>
+                <a href="https://linkedin.com/in/lukinkirill" class="footer-link">LINKEDIN.COM/IN/LUKINKIRILL</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="game-modal">
+        <div class="game-container">
+            <div class="game-header">
+                <h2 class="game-title">🎮 Trash Runner</h2>
+                <button class="game-close" id="gameClose">✕</button>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+            <div class="game-controls">
+                <div class="game-score">
+                    <span data-en="Score" data-ru="Очки">Score</span>: <span id="gameScore">0</span>
+                </div>
+                <div class="game-highscore">
+                    <span data-en="Best" data-ru="Рекорд">Best</span>: <span id="gameHighScore">0</span>
+                </div>
+            </div>
+            <div class="game-instructions">
+                <p data-en="SPACE - Jump | ↓ or S - Crouch | Tap top half - Jump, bottom - Crouch" 
+                   data-ru="ПРОБЕЛ - Прыжок | ↓ или S - Присесть | Тап верх - Прыжок, низ - Присед">
+                   SPACE - Jump | ↓ or S - Crouch | Tap top half - Jump, bottom - Crouch
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/pixel-art.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
